@@ -6,9 +6,10 @@ import CommonLogo from "./CommonLogo";
 import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
-  const { search, authIcon, bar, cross } = allIcons;
+   const { search, authIcon, bar, cross } = allIcons;
   const { pathname } = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
+
 
   return (
     <nav className="bg-white sticky top-0 z-50">

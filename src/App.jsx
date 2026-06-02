@@ -1,13 +1,20 @@
-import Footer from "./components/common/Footer";
-import Navbar from "./components/common/Navbar";
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Rootlayout from "./rootlayout/Rootlayout";
+// import Home from "./pages/Home";
 
-function App() {
+
+const App = () => {
   return (
-    <div>
-      <Navbar />
-  <Footer/>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<Rootlayout />}>
+          <Route index element={<h1>bdihfiefh</h1>}></Route>
+        
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;

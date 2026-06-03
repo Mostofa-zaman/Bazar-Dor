@@ -9,7 +9,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 // import required modules
-import { Autoplay } from "swiper/modules";
+import { Autoplay, Pagination } from "swiper/modules";
 import { productsBanner } from "../../../helper/projectArrayObj";
 
 const BannerSliders = () => {
@@ -28,8 +28,10 @@ const BannerSliders = () => {
           delay: 4500,
           disableOnInteraction: false,
         }}
+        pagination={{ clickable: true}}
         navigation={true}
-        modules={[Autoplay]}
+        modules={[Autoplay,Pagination]}
+        pagination={{ clickable: true }}
         onAutoplayTimeLeft={onAutoplayTimeLeft}
         className="mySwiper"
       >

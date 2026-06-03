@@ -1,7 +1,8 @@
 import React from 'react'
 import BannerSliders from '../components/home/bannerSlider/Index'
 import Category from '../components/home/category/Index'
-import CategoryCarousel from '../components/common/CategoryCarousel'
+import HomeProducts from '../components/home/homeProducts'
+
 
 const Home = () => {
   return (
@@ -9,6 +10,7 @@ const Home = () => {
 
         <BannerSliders/>
         <Category/> 
+        <HomeProducts/>
         
     </div>
   )

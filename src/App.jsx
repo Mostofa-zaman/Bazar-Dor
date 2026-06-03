@@ -1,7 +1,8 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Rootlayout from "./rootlayout/Rootlayout";
-// import Home from "./pages/Home";
+import Home from "./pages/Home";
+
 
 
 const App = () => {
@@ -9,7 +10,7 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route element={<Rootlayout />}>
-          <Route index element={<h1>bdihfiefh</h1>}></Route>
+          <Route index element={<Home/>}></Route>
         
         </Route>
       </Routes>

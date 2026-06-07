@@ -1,6 +1,6 @@
 import React from "react";
 import Container from "../../common/Container";
-import { categoriesItems } from "../../../helper/projectArryObj";
+import { categoriesItems } from "../../../helper/projectArrayObj";
 import PastMarketCard from "../../common/PastMarketCard";
 
 const PastWeekMarket = () => {

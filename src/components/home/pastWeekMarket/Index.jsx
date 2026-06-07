@@ -49,7 +49,7 @@ const PastWeekMarket = () => {
               </div>
             </div>
             <div className="">
-              <h3 className="heading-four text-center text-primary relative after:absolute after:bottom-[-6px] after:left-1/2 after:translate-x-[-50%] after:content-[''] after:w-[75%]  z after:h-[2px] after:bg-success">
+              <h3 className="heading-four text-center text-primary relative after:absolute after:-bottom-1.5 after:left-1/2 after:translate-x-[-50%] after:content-[''] after:w-[75%]  z after:h-[2px] after:bg-success">
                 সাম্প্রতিক দাম পরিবর্তন
               </h3>
               <div className="space-y-7 mt-10">

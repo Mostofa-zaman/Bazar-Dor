@@ -4,6 +4,8 @@ import Category from '../components/home/category/Index'
 import HomeProducts from '../components/home/homeProducts'
 import HighPriceSlider from '../components/home/highPriceSlider/Index'
 import LowPriceSlider from '../components/home/LowPriceSlider/Index'
+import GetTheApp from '../components/home/GetTheApp/Index'
+import GovtMess from '../components/home/govtMessage/Index'
 
 
 const Home = () => {
@@ -15,7 +17,8 @@ const Home = () => {
         <HomeProducts/>
         <HighPriceSlider/>
         <LowPriceSlider/>
-        
+        <GetTheApp/>
+        <GovtMess/>
     </div>
   )
 }

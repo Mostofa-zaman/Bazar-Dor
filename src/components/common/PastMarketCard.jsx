@@ -10,7 +10,7 @@ const PastMarketCard = ({ className, productName, productPrices ,srcImage,imgAlt
           <img
             src={srcImage}
             alt={imgAlt}
-            className=" h-[150px] max-w-[155px]  rounded-lg  object-cover"
+            className=" h-37.75 max-w-38.75  rounded-lg  object-cover"
           />
         </figure>
       </div>

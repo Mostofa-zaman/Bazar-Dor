@@ -4,8 +4,8 @@ import Bredcrumb from '../components/common/Bredcrumb'
 const MarketPrice = () => {
   return (
    <>
-   {/* <Bredcrumb/> */}
-rjigheife
+   <Bredcrumb/>
+
    </>
   )
 }

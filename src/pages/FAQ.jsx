@@ -1,8 +1,11 @@
 import React from 'react'
+import FaqComponent from '../components/faq/Index'
 
 const FAQ = () => {
   return (
-    <div>FAQ</div>
+   <>
+   <FaqComponent/>
+   </>
   )
 }
 

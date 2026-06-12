@@ -7,6 +7,7 @@ import MarketUpdates from "./pages/MarketUpdates";
 import SubmitPrice from "./pages/SubmitPrice";
 import About from "./pages/About";
 import FAQ from "./pages/FAQ";
+import Blog from "./pages/Blog";
 
 
 

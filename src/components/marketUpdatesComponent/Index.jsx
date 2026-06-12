@@ -1,6 +1,6 @@
 import React from "react";
-import Container from "../../common/Container";
-import NewsCard from "../../common/NewsCard";
+import Container from "../common/Container";
+import NewsCard from "../common/NewsCard";
 
 const MarketUpdatesComponent = () => {
   return (

@@ -1,8 +1,12 @@
 import React from 'react'
+import CompanyInfoComponent from '../components/CompanyInfo/Index'
 
 const CompanyInfo = () => {
   return (
-    <div>CompanyInfo</div>
+   <>
+   
+   <CompanyInfoComponent/>
+   </>
   )
 }
 

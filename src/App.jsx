@@ -21,6 +21,7 @@ const App = () => {
           <Route path={`/submit-price`} element={<SubmitPrice/>}></Route>
           <Route path={`/about`} element={<About/>}></Route>
           <Route path={`/faq`} element={<FAQ/>}></Route>
+          <Route path={`/blog`} element={<Blog/>}></Route>
         </Route>
       </Routes>
     </BrowserRouter>

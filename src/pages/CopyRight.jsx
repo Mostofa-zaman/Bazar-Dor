@@ -1,8 +1,11 @@
 import React from 'react'
+import CopyrightComponent from '../components/copyright/CopyrightComponent'
 
 const CopyRight = () => {
   return (
-    <div>CopyRight</div>
+   <>
+   <CopyrightComponent/>
+   </>
   )
 }
 

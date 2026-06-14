@@ -1,8 +1,11 @@
 import React from 'react'
+import AffiliateComponent from '../components/affilate/AffiliateComponent'
 
 const Affilate = () => {
   return (
-    <div>Affilate</div>
+   <>
+   <AffiliateComponent/>
+   </>
   )
 }
 

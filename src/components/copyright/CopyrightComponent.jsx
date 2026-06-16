@@ -41,7 +41,7 @@ const CopyrightComponent = () => {
 
               <p className="para-normal text-gray-700 flex items-start gap-2 mb-2 text-sm sm:text-base">
                 <MdLocationOn className="text-[#3bb77e] mt-1" />
-                <span>123, উত্তরা, ঢাকা 1230, বাংলাদেশ</span>
+                <span>123, উত্তরা, ঢাকা 1235, বাংলাদেশ</span>
               </p>
 
               <p className="para-normal text-gray-700 flex items-center gap-2 mb-2 text-sm sm:text-base">

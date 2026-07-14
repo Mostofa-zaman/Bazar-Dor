@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Rootlayout from "./rootlayout/Rootlayout";
+import Rootlayout from "./rootlayout/RootLayout";
 import Home from "./pages/Home";
 import MarketPrice from "./pages/MarketPrice";
 import MarketUpdates from "./pages/MarketUpdates";

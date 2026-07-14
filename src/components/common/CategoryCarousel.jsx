@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import allIcons from "../../helper/iconProvider";
-import CategoryUIOne from "../common/CategroyUIOne";
+import CategoryUIOne from "../common/CategroyUiOne";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 

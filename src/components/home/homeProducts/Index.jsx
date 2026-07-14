@@ -1,33 +1,37 @@
-import React, { useState, useLayoutEffect, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Container from "../../common/Container";
 import { productPriceItems } from "../../../helper/projectArrayObj";
 import PricePorductCart from "../../common/PricePorductCart";
 import { useVirtualizer } from "@tanstack/react-virtual";
 
+// SSR safe column check
 const getCols = () => {
+  if (typeof window === "undefined") return 3; // Default fallback for server
   const width = window.innerWidth;
   if (width < 640) return 1;
   if (width < 1024) return 2;
   return 3;
 };
-console.log(window.innerWidth);
 
 const getEstimateSize = (cols) => {
   if (cols === 1) return 460;
   if (cols === 2) return 360;
   return 300;
 };
-
 const HomeProducts = () => {
-  const parentRef = React.useRef(null);
-  const [colsPerRow, setColsPerRow] = useState(getCols);
+ const parentRef = useRef(null);
+  
+  // Initialize with a safe default or execution
+  const [colsPerRow, setColsPerRow] = useState(3);
 
   useEffect(() => {
+    // Set the correct columns immediately on the client side
+    setColsPerRow(getCols());
+
     const handleResize = () => {
       setColsPerRow(getCols());
     };
 
-    handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
@@ -38,8 +42,12 @@ const HomeProducts = () => {
     estimateSize: () => getEstimateSize(colsPerRow),
     gap: 16,
     overscan: 3,
-    key: colsPerRow,
   });
+
+  // Force virtualizer to clear its cache when the column count changes
+  useEffect(() => {
+    rowVirtualizer.measure();
+  }, [colsPerRow, rowVirtualizer]);
 
   return (
     <section className="pb-[60px] sm:pb-[120px]">
@@ -74,7 +82,7 @@ const HomeProducts = () => {
                 const startIndex = virtualItem.index * colsPerRow;
                 const rowItems = productPriceItems.slice(
                   startIndex,
-                  startIndex + colsPerRow,
+                  startIndex + colsPerRow
                 );
 
                 return (
@@ -89,7 +97,6 @@ const HomeProducts = () => {
                       width: "100%",
                       transform: `translateY(${virtualItem.start}px)`,
                       display: "grid",
-
                       gridTemplateColumns:
                         colsPerRow === 1
                           ? "1fr"
@@ -98,8 +105,8 @@ const HomeProducts = () => {
                         colsPerRow === 1
                           ? "12px"
                           : colsPerRow === 2
-                            ? "16px"
-                            : "20px",
+                          ? "16px"
+                          : "20px",
                       paddingBottom: "4px",
                     }}
                   >
@@ -125,4 +132,4 @@ const HomeProducts = () => {
   );
 };
 
-export default HomeProducts;
+export default HomeProducts

@@ -6,7 +6,7 @@ import LowPriceSlider from '../components/home/lowPriceSlider/Index'
 import GetTheApp from '../components/home/getTheApp/Index'
 import GovtMess from '../components/home/govtMessage/Index'
 import PastWeekMarket from '../components/home/pastWeekMarket/Index'
-import HomeProducts from '../components/home/homeProducts'
+import HomeProducts from '../components/home/homeProducts/Index'
 
 
 

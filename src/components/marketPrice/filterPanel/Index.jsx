@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Container from "../../common/Container";
 import { categoriesItems, sortOptions } from "../../../helper/projectArrayObj";
-import HomeProducts from "../../home/homeproducts/Index";
+import HomeProducts from "../../home/homeProducts/Index";
 
 const FilterPanel = () => {
   const [selectedCategories, setSelectedCategories] = useState([]);

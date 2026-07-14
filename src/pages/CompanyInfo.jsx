@@ -1,5 +1,5 @@
 import React from 'react'
-import CompanyInfoComponent from '../components/CompanyInfo/Index'
+import CompanyInfoComponent from '../components/companyInfo/Index'
 
 const CompanyInfo = () => {
   return (

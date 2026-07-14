@@ -1,5 +1,5 @@
 import React from 'react'
-import AboutComponent from '../components/AboutComponent/Index'
+import AboutComponent from '../components/aboutComponent/Index'
 
 const About = () => {
   return (
